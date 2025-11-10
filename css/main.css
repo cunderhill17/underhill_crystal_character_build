@@ -1,0 +1,355 @@
+/* =========================
+Base setup
+========================== */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hidden { 
+  display: none; 
+}
+
+body { 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: rgb(48, 48, 48);
+  background-image: url(../images/background.jpg);
+  background-blend-mode: color-burn;
+  color: white;
+  height: 100vh;
+  position: relative;
+}
+
+/* =================================
+Styling for the Header 
+================================== */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0px;
+  background-color: black;
+}
+
+.logo {
+  width: 400px;
+}
+
+
+/* =========================
+Main content - Navigation
+========================== */
+
+main {
+  margin-top: 25px;
+}
+
+#category_nav {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #7f5e29;
+}
+
+#categories { 
+  display: flex;
+  justify-content: center;
+  list-style-type: none; 
+  padding: 0;
+  text-align: center;
+}
+
+#categories li { 
+  margin: 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#categories li a.circle { 
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* ========================================
+Letter set up and transition 
+======================================== */
+
+.letter01, .letter02, .letter03, .letter04 {
+  font-size: 6rem;
+  font-weight: bold;
+  color: rgb(193, 193, 152);
+  transition: all 0.8s ease-out;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0;
+  background: transparent;
+}
+
+#categories li:hover .letter01 { 
+  color: transparent;
+  background: bisque;
+  border-radius: 0 50% 50% 50%;
+}
+
+#categories li:hover .letter02 { 
+  color: transparent;
+  background: bisque;
+  border-radius: 50% 0 50% 50%;
+}
+
+#categories li:hover .letter03 { 
+  color: transparent;
+  background: bisque;
+  border-radius: 50% 50% 0 50%;
+}
+
+#categories li:hover .letter04 { 
+  color: transparent;
+  background: bisque;
+  border-radius: 50% 50% 50% 0;
+}
+
+/* =================================
+Typing text setup 
+================================= */
+
+.typing01, .typing02, .typing03, .typing04 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(142, 142, 110);
+  font-size: 2rem;
+  white-space: nowrap;
+  border-right: 2px solid rgb(193, 193, 152);
+  width: 0;
+  overflow: hidden;
+  margin: 0;
+  display: none;
+}
+
+/* =============================
+Typing effects
+============================== */
+
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: rgb(193, 193, 152); }
+}
+
+@keyframes typing01 { from { width: 0; } to { width: 7ch; } }
+@keyframes typing02 { from { width: 0; } to { width: 5ch; } }
+@keyframes typing03 { from { width: 0; } to { width: 6ch; } }
+@keyframes typing04 { from { width: 0; } to { width: 9ch; } }
+
+#categories li:hover .typing01 {
+  display: block;
+  animation: typing01 1s steps(7) 0.8s forwards,
+             blink 0.7s step-end infinite;
+  animation-delay: 0.8s, 0.8s;
+}
+
+#categories li:hover .typing02 {
+  display: block;
+  animation: typing02 1s steps(5) 0.8s forwards,
+             blink 0.7s step-end infinite;
+  animation-delay: 0.8s, 0.8s;
+}
+
+#categories li:hover .typing03 {
+  display: block;
+  animation: typing03 1s steps(6) 0.8s forwards,
+             blink 0.7s step-end infinite;
+  animation-delay: 0.8s, 0.8s;
+}
+
+#categories li:hover .typing04 {
+  display: block;
+  animation: typing04 2s steps(9) 0.8s forwards,
+             blink 0.7s step-end infinite;
+  animation-delay: 0.8s, 0.8s;
+}
+
+/* =========================
+Main content - Section Text
+========================== */
+
+section {
+    margin: 25px 0px;
+}
+
+.sec-heading {
+    text-align: center;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.sec-heading span {
+    color: white;
+}
+
+.sec-heading span:hover {
+    color: #7f5e29;
+}
+
+/* ============================
+Footer Styling 
+============================= */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    bottom: 0;
+    background-color: rgb(193, 193, 152);
+    color: #7f5e29;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* ==================================
+Styling for the Lightboxes
+=================================== */
+
+.lightbox {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.85);
+  background-repeat: no-repeat;
+  background-size: 55vh;
+  background-position: 40px bottom;
+  display: none;
+}
+
+.lightbox:target {
+  display: block;
+}
+
+.lightbox-close {
+  display: inline-block;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 2vh;
+  margin-left: 90vw;
+}
+
+.lightbox-close:hover {
+  color:#7f5e29;
+}
+
+
+
+/* ================================
+Styling for Lightbox Content
+================================= */
+
+.lb-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+}
+
+.lb-grid-item {
+    margin: 15px;
+}
+
+.image-container {
+    display: grid;
+    width: 590px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+
+}
+
+.author-heading {
+  text-align: center;
+}
+
+.photo-heading {
+    text-align: center;
+    width: 590px;
+}
+
+.author-photo {
+  margin-top: 15px;
+  width: 400px;
+  border-radius: 15%;
+}
+
+.photos {
+    display: inline-block;
+    margin: 10px auto;
+    width: 250px;
+    height: 250px;
+    filter: brightness(30%);
+}
+
+.photos:hover {
+  cursor: pointer;
+  filter: brightness(100%);
+}
+
+.photo01, .moviePhoto01, .tvPhoto01 {
+    border-radius: 50% 50% 0 50%;
+}
+
+.photo02, .moviePhoto02, .tvPhoto02 {
+    border-radius: 50% 50% 50% 0;
+}
+
+.photo03, .moviePhoto03, .tvPhoto03 {
+    border-radius: 50% 0 50% 50%;
+}
+
+.photo04, .moviePhoto04 {
+    border-radius: 0 50% 50% 50%;
+}
+
+.mini-lb {
+    display: none;
+}
+
+.lb-p-text {
+    margin-top: 15px;
+    width: 590px;
+}
+
+#movie-text-1 h3, #movie-text-2 h3, #movie-text-3 h3, #movie-text-4 h3 {
+  margin: 10px 0px;
+}
+
+#tv-text-1 h3, #tv-text-2 h3, #tv-text-3 h3 {
+  margin: 10px 0px;
+}
