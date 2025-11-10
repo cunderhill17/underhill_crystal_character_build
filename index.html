@@ -3,9 +3,314 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Austen Literary Society</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     
+    <header>
+        <h1 class="hidden">The Austen Literary Society</h1>
+        <img src="images/logo.png" class="logo" alt="Austen Literary Society Logo">
+    </header>
+
+    <main>
+        <h2 class="hidden">Main Navigation</h2>
+        <nav id="category_nav">
+            <ul id="categories">
+                <li>
+                    <a href="#lightbox1" class="circle">
+                        <p class="letter01">J</p>
+                        <p class="typing01">History</p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#lightbox2" class="circle">
+                        <p class="letter02">A</p>
+                        <p class="typing02">Books</p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#lightbox3" class="circle">
+                        <p class="letter03">N</p>
+                        <p class="typing03">Movies</p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#lightbox4" class="circle">
+                        <p class="letter04">E</p>
+                        <p class="typing04">TV Series</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <section>
+            <h2 class="sec-heading">
+                <span>Hover</span> 
+                <span>/</span> 
+                <span>Click</span> 
+                <span>on</span> 
+                <span>a</span> 
+                <span>letter</span> 
+                <span>and</span>
+                <span>explore</span> 
+                <span>the</span> 
+                <span>ever</span> 
+                <span>growing</span> 
+                <span>world</span> 
+                <span>of</span> 
+                <span>Jane</span> 
+                <span>Austen.</span>
+            </h2>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; All rights belong to their original creators.</p>
+    </footer>
+
+    <!-- BELOW THIS LINE ARE MY LIGHTBOXES -->
+
+    <div class="lightbox" id="lightbox1">
+        <a href="" class="lightbox-close">x</a>
+
+        <div class="lb-grid">
+            <section class="lb-grid-item">
+                <h2 class="author-heading">Jane Austen</h2>
+                <div class="center-content">
+                    <img class="author-photo" src="images/ja_author_photo.jpg" alt="placeholder"> <!--Add in Photo of Jane Austen-->
+                </div>
+
+            </section>
+
+            <section class="lb-grid-item">
+                <h2>The History of Austen's Life</h2>
+                <p class="lb-p-text">Born: December 16, 1775, Steventon, Hampshire England</p>
+                <p class="lb-p-text">Died: July 18, 1817, Winchester, Hampshire England</p>
+                <p class="lb-p-text">Jane Austen was born into a comfortably middle-class family in rural England. Her father, George Austen, was a clergyman, and her mother, Cassandra Austen, managed the household. Jane had six brothers and one sister, Cassandra, who was her closest companion and confidante.</p>
+                <p class="lb-p-text">Austen received a modest formal education but was a voracious reader, with access to her father’s library and local lending libraries. From an early age, she wrote stories, plays, and parodies that displayed her keen observational skills and sharp wit.</p>
+                <p class="lb-p-text">She lived most of her life in the countryside, moving with her family to different parsonages, and never married. Despite this, Austen’s novels explore romance, courtship, and marriage with unmatched insight into social structures, class mobility, and gender dynamics.</p>
+            </section>
+        </div>
+    </div>
+
+    <div class="lightbox" id="lightbox2">
+        <a href="" class="lightbox-close">x</a>
+
+        <div class="lb-grid">
+            <section class="lb-grid-item">
+                <h2 class="photo-heading">Books By Jane Austen</h2>
+                <div class="image-container">
+                    <img class="photo01 photos" src="images/ja_book_emma.jpg" alt="placeholder">
+                    <img class="photo02 photos" src="images/ja_book_pride_and_prejudice.jpg" alt="placeholder">
+                    <img class="photo03 photos" src="images/ja_book_sense_and_sensibility.jpg" alt="placeholder">
+                    <img class="photo04 photos" src="images/ja_book_persuasion.jpg" alt="placeholder">
+                </div>
+
+            </section>
+
+            <section class="lb-grid-item mini-lb" id="book-text-1">
+                <h2>Emma</h2>
+                <p class="lb-p-text">Published 1815</p>
+                <p class="lb-p-text">Genre: Romantic Comedy / Social Satire</p>
+                <p class="lb-p-text">Emma is a witty and insightful novel about youth, romance, and the dangers of self-deception. It follows Emma Woodhouse, a wealthy, intelligent, and independent young woman who lives in the quiet village of Highbury, England. Confident in her matchmaking abilities, Emma meddles in the love lives of those around her—often with humorous and painful consequences.</p>
+            </section>
+
+            <section class="lb-grid-item mini-lb" id="book-text-2">
+                <h2>Pride and Prejudice</h2>
+                <p class="lb-p-text">Published 1813</p>
+                <p class="lb-p-text">Genre: Romantic Comedy / Social Satire</p>
+                <p class="lb-p-text">Pride and Prejudice is one of Jane Austen’s most beloved works—a sharp, romantic, and humorous exploration of love, marriage, and social class in early 19th-century England. It centers on the spirited Elizabeth Bennet, her family’s attempts to marry well, and her evolving relationship with the proud yet honorable Mr. Fitzwilliam Darcy</p>
+            </section>
+
+            <section class="lb-grid-item mini-lb" id="book-text-3">
+                <h2>Sense and Sensibility</h2>
+                <p class="lb-p-text">Published 1811</p>
+                <p class="lb-p-text">Genre: Romance / Social Satire</p>
+                <p class="lb-p-text">Sense and Sensibility was Jane Austen’s first published novel. It explores love, money, and family through the contrasting personalities of two sisters—Elinor (representing “sense”: reason, restraint, and practicality) and Marianne Dashwood (representing “sensibility”: emotion, passion, and spontaneity). The story examines how each woman navigates love and heartbreak while confronting the social and financial constraints of early 19th-century England.</p>
+            </section>
+
+            <section class="lb-grid-item mini-lb" id="book-text-4">
+                <h2>Persuasion</h2>
+                <p class="lb-p-text">Published 1817 (posthumously)</p>
+                <p class="lb-p-text">Genre: Romance / Social Commentary</p>
+                <p class="lb-p-text">Persuasion is Jane Austen’s final completed novel and one of her most mature works. It tells the story of Anne Elliot, a woman who, at 27, has learned to live with regret after being persuaded years earlier to break off an engagement with the man she truly loved—Captain Frederick Wentworth. The novel explores themes of second chances, constancy, and the quiet strength of character in a changing social world.</p>
+            </section>
+        </div>
+    </div>
+
+    <div class="lightbox" id="lightbox3">
+        <a href="" class="lightbox-close">x</a>
+
+        <div class="lb-grid">
+            <section class="lb-grid-item">
+                <h2 class="photo-heading">Movies Adaptations</h2>
+                <div class="image-container">
+                    <img class="moviePhoto01 photos" src="images/ja_movie_emma.jpg" alt="placeholder">
+                    <img class="moviePhoto02 photos" src="images/ja_movie_pride_and_prejudice.jpg" alt="placeholder">
+                    <img class="moviePhoto03 photos" src="images/ja_movie_sense_and_sensibility.jpg" alt="placeholder">
+                    <img class="moviePhoto04 photos" src="images/ja_movie_persuasion.jpg" alt="placeholder">
+                </div>
+
+            </section>
+
+            <section class="lb-grid-item mini-lb" id="movie-text-1">
+                <h2>Emma</h2>
+                <p class="lb-p-text">Director: Autumn de Wilde</p>
+                <p class="lb-p-text">Screenplay: Eleanor Catton</p>
+                <p class="lb-p-text">Release Date: 2020</p>
+                <p class="lb-p-text">Genre: Period comedy-drama / literary adaptation</p>
+                <p class="lb-p-text">Autumn de Wilde’s Emma. (the period in the title is intentional) is a stylish, witty, and visually sumptuous adaptation of Jane Austen’s classic novel. The film remains faithful to Austen’s plot and dialogue but updates the tone and aesthetics with modern humor, vibrant visuals, and a sharper feminist edge.</p>
+                <h3>Main Cast</h3>
+                <ul>
+                    <li>Anya Taylor-Joy as Emma Woodhouse</li>
+                    <li>Johnny Flynn as Mr. Knightley</li>
+                    <li>Mia Goth as Harriet Smith</li>
+                    <li>Bill Nighy as Mr. Woodhouse</li>
+                    <li>Callum Turner as Frank Churchill</li>
+                    <li>Amber Anderson as Jane Fairfax</li>
+                    <li>Josh O’Connor as Mr. Elton</li>
+                </ul>
+            </section>
+
+            <section class="lb-grid-item mini-lb" id="movie-text-2">
+                <h2>Pride and Prejudice</h2>
+                <p class="lb-p-text">Director: Joe Wright</p>
+                <p class="lb-p-text">Screenplay: Deborah Moggach (with uncredited revisions by Emma Thompson)</p>
+                <p class="lb-p-text">Release Date: 2005</p>
+                <p class="lb-p-text">Genre: Romantic Drama / literary adaptation</p>
+                <p class="lb-p-text">Joe Wright’s Pride & Prejudice (2005) is a lush, cinematic, and emotionally charged adaptation of Jane Austen’s beloved 1813 novel. It stars Keira Knightley as a spirited, modernized Elizabeth Bennet and Matthew Macfadyen as a brooding, deeply human Mr. Darcy. While faithful to the novel’s major events, this version emphasizes emotional realism, romantic intensity, and visual beauty, transforming Austen’s social satire into a sweeping love story for 21st-century audiences</p>
+                <h3>Main Cast</h3>
+                <ul>
+                    <li>Keira Knightley as Elizabeth Bennet</li>
+                    <li>Matthew Macfadyen as Mr. Fitzwilliam Darcy</li>
+                    <li>Rosamund Pike as Jane Bennet</li>
+                    <li>Simon Woods as Mr. Charles Bingley</li>
+                    <li>Donald Sutherland as Mr. Bennet</li>
+                    <li>Brenda Blethyn as Mrs. Bennet</li>
+                    <li>Judi Dench as Lady Catherine de Bourgh</li>
+                    <li>Tom Hollander as Mr. Collins</li>
+                    <li>Carey Mulligan and Jena Malone as Kitty and Lydia Bennet</li>
+                </ul>
+            </section>
+
+            <section class="lb-grid-item mini-lb" id="movie-text-3">
+                <h2>Sense and Sensibility</h2>
+                <p class="lb-p-text">Director: Ang Lee</p>
+                <p class="lb-p-text">Screenplay: Emma Thompson</p>
+                <p class="lb-p-text">Release Date: 1995(UK) and 1996(US)</p>
+                <p class="lb-p-text">Genre: Period Drama / Romance</p>
+                <p class="lb-p-text">This 1995 adaptation of Sense and Sensibility is widely considered one of the finest film versions of Jane Austen’s work. Directed by Ang Lee and written by Emma Thompson (who also stars), the film is both faithful to Austen’s spirit and emotionally rich, blending subtle humor with heartfelt drama. It revitalized Austen for modern audiences, earning seven Academy Award nominations, including Best Picture, and winning Best Adapted Screenplay for Emma Thompson.</p>
+                <h3>Main Cast</h3>
+                <ul>
+                    <li>Emma Thompson as Elinor Dashwood</li>
+                    <li>Kate Winslet as Marianne Dashwood</li>
+                    <li>Alan Rickman as Colonel Brandon</li>
+                    <li>Hugh Grant as Edward Ferrars</li>
+                    <li>Greg Wise as John Willoughby</li>
+                    <li>Gemma Jones as Mrs. Dashwood</li>
+                    <li>Imogen Stubbs as Lucy Steele</li>
+                    <li>Hugh Laurie as Mr. Palmer and Imelda Staunton as Charlotte Palmer</li>
+                </ul>
+            </section>
+
+            <section class="lb-grid-item mini-lb" id="movie-text-4">
+                <h2>Persuasion</h2>
+                <p class="lb-p-text">Director: Carrie Cracknell</p>
+                <p class="lb-p-text">Screenplay: Ron Bass & Alice Victoria Winslow</p>
+                <p class="lb-p-text">Release Date: 2022</p>
+                <p class="lb-p-text">Genre: Romantic Drama / Literary Adaptation</p>
+                <p class="lb-p-text">The 2022 Netflix adaptation of Persuasion, directed by Carrie Cracknell and starring Dakota Johnson, reimagines Jane Austen’s final completed novel through a distinctly modern, self-aware, and comedic lens. While it retains the basic plot of lost love rekindled between Anne Elliot and Captain Frederick Wentworth, it diverges sharply in tone, dialogue, and style—transforming Austen’s subtle social commentary into a contemporary-feeling romantic dramedy</p>
+                <h3>Main Cast</h3>
+                <ul>
+                    <li>Dakota Johnson as Anne Elliot</li>
+                    <li>Cosmo Jarvis as Captain Frederick Wentworth</li>
+                    <li>Henry Golding as William Elliot</li>
+                    <li>Richard E. Grant as Sir Walter Elliot</li>
+                    <li>Nikki Amuka-Bird as Lady Russell</li>
+                    <li>Mia McKenna-Bruce as Mary Musgrove</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <div class="lightbox" id="lightbox4">
+        <a href="" class="lightbox-close">x</a>
+
+        <div class="lb-grid">
+            <section class="lb-grid-item">
+                <h2 class="photo-heading">TV Adaptations and Affiliated Shows</h2>
+                <div class="image-container">
+                    <img class="tvPhoto01 photos" src="images/ja_tv_pride_and_prejudice.jpg" alt="placeholder">
+                    <img class="tvPhoto02 photos" src="images/ja_tv_sanditon.jpg" alt="placeholder">
+                    <img class="tvPhoto03 photos" src="images/ja_affiliated_death_comes_to_pemberley.jpg" alt="placeholder">
+                </div>
+
+            </section>
+
+            <section class="lb-grid-item mini-lb" id="tv-text-1">
+                <h2>Pride and Prejudice</h2>
+                <p class="lb-p-text">Director: Simon Langton</p>
+                <p class="lb-p-text">Screenplay: Andrew Davies</p>
+                <p class="lb-p-text">Release Date: 24 September - 26 November 1995 (BBC One, UK)</p>
+                <p class="lb-p-text">Genre: Period Drama / Romance</p>
+                <p class="lb-p-text">The 1995 BBC adaptation of Pride and Prejudice is one of the most acclaimed versions of Jane Austen’s beloved novel. Written by Andrew Davies and starring Colin Firth and Jennifer Ehle, this six-part series is praised for its faithful adaptation, attention to period detail, and the depth it gives to both major and minor characters. Unlike the 2005 film, the series has time to fully explore subplots and social nuances, making it a favorite for Austen purists and period drama enthusiasts alike.</p>
+                <h3>Main Cast</h3>
+                <ul>
+                    <li>Jennifer Ehle as Elizabeth Bennet</li>
+                    <li>Colin Firth as Mr. Darcy</li>
+                    <li>Susannah Harker as Jane Bennet</li>
+                    <li>Crispin Bonham-Carter as Charles Bingley</li>
+                    <li>Julia Sawalha as Lydia Bennet</li>
+                    <li>Adrian Lukis as George Wickham</li>
+                </ul>
+            </section>
+
+            <section class="lb-grid-item mini-lb" id="tv-text-2">
+                <h2>Sanditon</h2>
+                <p class="lb-p-text">Creator/Developers: Andrew Davies (adapted from Jane Austens unfinished novel)</p>
+                <p class="lb-p-text">Network: ITV (UK), PBS Masterpiece (US)</p>
+                <p class="lb-p-text">Release Date: 2019</p>
+                <p class="lb-p-text">Genre: Period Drama / Romance</p>
+                <p class="lb-p-text">Sanditon (2019) is a British period drama based on Jane Austen’s unfinished final novel, adapted and expanded by Andrew Davies, who also adapted the 1995 Pride and Prejudice. The series brings Austen’s story of ambition, social mobility, and romance to life, filling in gaps left by her incomplete manuscript.</p>
+                <p class="lb-p-text">Set in the seaside town of Sanditon, the series follows the arrival of Charlotte Heywood, a young, independent-minded visitor from the countryside, and her interactions with the town’s eccentric residents, ambitious developers, and wealthy newcomers. The series blends romance, comedy, and social critique, while taking creative liberties to complete Austen’s narrative.</p>
+                <h3>Main Cast</h3>
+                <ul>
+                    <li>Rose Williams as Charlotte Heywood</li>
+                    <li>Theo James as Sidney Parker</li>
+                    <li>Kristoffer Polaha as Tom Parker</li>
+                    <li>Anne Reid as Lady Denham</li>
+                    <li>Kathy Kiera Clarke as Mrs. Griffiths</li>
+                    <li>Mark Stanley as Edward Denham</li>
+                </ul>
+            </section>
+
+            <section class="lb-grid-item mini-lb" id="tv-text-3">
+                <h2>Death Comes to Pemberley</h2>
+                <p class="lb-p-text">Director: Daniel Percival</p>
+                <p class="lb-p-text">Screenplay: Juliette Towhidi (based on the novel by P.D James)</p>
+                <p class="lb-p-text">Release Date: 2013</p>
+                <p class="lb-p-text">Genre: Period Drama / mystery / crime</p>
+                <p class="lb-p-text">Death Comes to Pemberley is a two-part British TV drama based on the 2011 novel by P.D. James, which imagines a murder mystery set in the world of Jane Austen’s Pride and Prejudice. The story picks up six years after the marriage of Elizabeth Bennet and Mr. Darcy, presenting a fusion of Austen’s Regency setting with a whodunit plot. While the characters and social milieu are directly drawn from Austen’s novel, the murder mystery is entirely P.D. James’ invention.</p>
+                <h3>Main Cast</h3>
+                <ul>
+                    <li>Matthew Rhys as Mr. Darcy</li>
+                    <li>Anna Maxwell Martin as Elizabeth Darcy</li>
+                    <li>Rupert Graves as Colonel Fitzwilliam</li>
+                    <li>Danae Kara as Lydia Wickham</li>
+                    <li>John Simm as George Wickham</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/main.js"></script>
 </body>
 </html>
